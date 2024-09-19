@@ -24,7 +24,6 @@ To employ any of these methods, simply configure the appropriate settings in the
   <img src="images/RAGGPT_schema.png" alt="Schema">
 </div>
 
-* NOTE: This project is currently set up as a **demo**. As such, the document management is simplified and not suitable for production environments.
 
 ## Document Storage
 Documents are stored in two separate folders within the `data` directory:
@@ -42,45 +41,5 @@ Vector databases (vectorDBs) are generated within the `data` folder, facilitatin
 - It is **strongly recommended** to design a more robust and secure document handling process for any production deployment.
 - Ensure that you place your files in the correct directories (`data/docs_2` and `data/docs`) for the project to function as intended.
 
-## Running the Project
-
-To get the project up and running, you'll need to set up your environment and install the necessary dependencies. You can do this in two ways:
-
-### Option 1: Using the Parent Directory Instructions
-
-Follow the instruction on the [parent directory](https://github.com/Farzad-R/LLM-playground/tree/master) to create an environment and install required libraries. 
-
-### Option 2: Installing Dependencies Individually
-If you prefer to install the dependencies individually, run the following command:
-
 ```
-pip install gradio==4.13.0 langchain==0.0.354 openai==0.28.0 chromadb==0.4.22 pypdf==3.17.4 pandas==2.1.4
-```
-
-1. **Configuration and Execution**
-* Open cfg.py and fill in your GPT API credentials.
-
-2. **Activate Your Environment.**
-3. **Ensure you are in the RAG-GPT directory**
-4. **Run the Application:**
-
-In Terminal 1:
-```
-python src\serve.py
-```
-
-In Terminal 2:
-```
-python src\raggpt_app.py
-```
-5. Chat with your documents.
-
-**YouTube video: **[Link](https://www.youtube.com/watch?v=1FERFfut4Uw&t=3s)
-
-**Slides:** [Link](https://github.com/Farzad-R/LLM-Zero-to-Hundred/blob/master/presentation/presentation.pdf)
-
-Extra read:
-- [GPT model](https://platform.openai.com/docs/models/overview) 
-- [Gradio](https://www.gradio.app/guides/quickstart)
-- [Langchain](https://python.langchain.com/docs/get_started/quickstart)
-- [ChromaDB](https://www.trychroma.com/)
+Chat with your documents.
